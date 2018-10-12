@@ -1,8 +1,0 @@
-nPumps, size, earnings, popped, trials.thisRepN, trials.thisTrialN, trials.thisN, trials.thisIndex, trials.ran, trials.order, imageFile, maxPumps, participant, gender (m/f), age, session, date, expName, frameRate
-7, 0.20500000000000002, 0.35000000000000003, false, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-30, 0.5499999999999999, 1.5, false, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-15, 0.31, 0, true, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-3, 0.13, 0, true, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-33, 0.595, 1.6500000000000001, false, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-0, 0.1, 0, false, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
-31, 0.565, 1.55, false, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, a, m, 25, 004, 2018-10-02_22:39:11.721, bart, 60
