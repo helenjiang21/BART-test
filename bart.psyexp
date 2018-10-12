@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.0b8">
+<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
   <Settings>
+    <Param name="Completed URL" updates="None" val="completedURL" valType="str"/>
     <Param name="Completion URL" updates="None" val="completionURL" valType="str"/>
     <Param name="Data filename" updates="None" val="'data' + os.sep + '%s_%s' % (expInfo['participant'], expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
@@ -8,6 +9,7 @@
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="incompleteURL" valType="str"/>
     <Param name="JS libs" updates="None" val="packaged" valType="str"/>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
     <Param name="Save csv file" updates="None" val="False" valType="bool"/>
