@@ -152,7 +152,7 @@
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="if event.getKeys(['space']):&amp;#10;  nPumps=nPumps+1&amp;#10;  if nPumps&gt;maxPumps:&amp;#10;    popped=True&amp;#10;    continueRoutine=False&amp;#10;if event.getKeys(['return']):&amp;#10;    popped=False&amp;#10;    continueRoutine=False" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="var thisResp = psychoJS.eventManager.getKeys();&amp;#10;console.log(thisResp)&amp;#10;if (&quot;space&quot; == thisResp[0]) {&amp;#10;    nPumps = nPumps+1;&amp;#10;    if (nPumps &gt; maxPumps) {&amp;#10;        popped=true;&amp;#10;        continueRoutine=false;&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;if (&quot;return&quot; == thisResp[0]) {&amp;#10;    popped=false;&amp;#10;    continueRoutine=false;&amp;#10;}" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="var thisResp = psychoJS.eventManager.getKeys();&amp;#10;if (&quot;space&quot; == thisResp[0]) {&amp;#10;    nPumps = nPumps+1;&amp;#10;    if (nPumps &gt; maxPumps) {&amp;#10;        popped=true;&amp;#10;        continueRoutine=false;&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;if (&quot;return&quot; == thisResp[0]) {&amp;#10;    popped=false;&amp;#10;    continueRoutine=false;&amp;#10;}" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>

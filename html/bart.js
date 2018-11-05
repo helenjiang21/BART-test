@@ -420,7 +420,6 @@ function trialRoutineEachFrame() {
     bankedMsg.setText(bankedText);
   }
   var thisResp = psychoJS.eventManager.getKeys();
-  console.log(thisResp)
   if ("space" == thisResp[0]) {
       nPumps = nPumps+1;
       if (nPumps > maxPumps) {
