@@ -23,7 +23,7 @@ psychoJS.openWindow({
 
 // store info about the experiment session:
 let expName = 'bart';  // from the Builder filename that created this script
-let expInfo = {'participant': '', 'gender (m/f)': '', 'age': '', 'session': '004'};
+let expInfo = {b'participant': b'', b'gender (m/f)': b'', b'age': b'', b'session': b'004'};
 
 // schedule the experiment:
 psychoJS.schedule(psychoJS.gui.DlgFromDict({
@@ -55,11 +55,9 @@ dialogCancelScheduler.add(quitPsychoJS, false);
 
 psychoJS.start({configURL: 'config.json', expInfo: expInfo});
 
-var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '3.0.0b11';
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -74,27 +72,6 @@ function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
-var instructionsClock;
-var instrMessage;
-var trialClock;
-var bankedEarnings;
-var balloonEarnings;
-var bankedText;
-var lastBalloonEarnings;
-var thisBalloonEarnings;
-var balloonSize;
-var balloonMsgHeight;
-var balloonBody;
-var reminderMsg;
-var balloonValMsg;
-var bankedMsg;
-var feedbackClock;
-var feedbackText;
-var feedbackMsg;
-var finalScoreClock;
-var finalScore_2;
-var globalClock;
-var routineTimer;
 function experimentInit() {
   // Initialize components for Routine "instructions"
   instructionsClock = new util.Clock();
@@ -121,7 +98,7 @@ function experimentInit() {
     win : psychoJS.window,
     name : 'balloonBody', units : 'height', 
     image : 'redBalloon.png', mask : undefined,
-    ori : (- 90), pos : [0, 0], size : 1.0,
+    ori : (-90), pos : [0, 0], size : 1.0,
     color : new util.Color ([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
@@ -131,7 +108,7 @@ function experimentInit() {
     name : 'reminderMsg',
     text : 'Press SPACE to pump the balloon\nPress RETURN to bank this sum',
     font : 'Arial',
-    units : 'height',   pos : [0, (- 0.8)], height : 0.025,  wrapWidth : undefined, ori: 0,
+    units : 'height',   pos : [0, (-0.8)], height : 0.025,  wrapWidth : undefined, ori: 0,
     color : new util.Color('white'),  opacity : 1,
     depth : -3.0 
   });
@@ -200,10 +177,6 @@ function experimentInit() {
   return Scheduler.Event.NEXT;
 }
 
-var t;
-var frameN;
-var resp;
-var instructionsComponents;
 function instructionsRoutineBegin() {
   //------Prepare to start Routine 'instructions'-------
   t = 0;
@@ -223,7 +196,6 @@ function instructionsRoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var continueRoutine;
 function instructionsRoutineEachFrame() {
   //------Loop for each frame of Routine 'instructions'-------
   let continueRoutine = true; // until we're told otherwise
@@ -286,7 +258,6 @@ function instructionsRoutineEachFrame() {
   }
 }
 
-
 function instructionsRoutineEnd() {
   //------Ending Routine 'instructions'-------
   for (const thisComponent of instructionsComponents) {
@@ -300,7 +271,6 @@ function instructionsRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var trials;
 function trialsLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials = new TrialHandler({
@@ -326,17 +296,12 @@ function trialsLoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-
 function trialsLoopEnd() {
   psychoJS.experiment.removeLoop(trials);
 
   return Scheduler.Event.NEXT;
 }
 
-var popped;
-var nPumps;
-var bankButton;
-var trialComponents;
 function trialRoutineBegin() {
   //------Prepare to start Routine 'trial'-------
   t = 0;
@@ -364,7 +329,6 @@ function trialRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function trialRoutineEachFrame() {
   //------Loop for each frame of Routine 'trial'-------
@@ -479,7 +443,6 @@ function trialRoutineEachFrame() {
   }
 }
 
-
 function trialRoutineEnd() {
   //------Ending Routine 'trial'-------
   for (const thisComponent of trialComponents) {
@@ -508,7 +471,6 @@ function trialRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var feedbackComponents;
 function feedbackRoutineBegin() {
   //------Prepare to start Routine 'feedback'-------
   t = 0;
@@ -533,7 +495,6 @@ function feedbackRoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var frameRemains;
 function feedbackRoutineEachFrame() {
   //------Loop for each frame of Routine 'feedback'-------
   let continueRoutine = true; // until we're told otherwise
@@ -579,7 +540,6 @@ function feedbackRoutineEachFrame() {
   }
 }
 
-
 function feedbackRoutineEnd() {
   //------Ending Routine 'feedback'-------
   for (const thisComponent of feedbackComponents) {
@@ -591,9 +551,6 @@ function feedbackRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var scoreText;
-var doneKey;
-var finalScoreComponents;
 function finalScoreRoutineBegin() {
   //------Prepare to start Routine 'finalScore'-------
   t = 0;
@@ -614,7 +571,6 @@ function finalScoreRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function finalScoreRoutineEachFrame() {
   //------Loop for each frame of Routine 'finalScore'-------
@@ -682,7 +638,6 @@ function finalScoreRoutineEachFrame() {
   }
 }
 
-
 function finalScoreRoutineEnd() {
   //------Ending Routine 'finalScore'-------
   for (const thisComponent of finalScoreComponents) {
@@ -706,7 +661,6 @@ function finalScoreRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-
 function endLoopIteration(thisTrial) {
   // ------Prepare for next entry------
   return function () {
@@ -717,7 +671,6 @@ function endLoopIteration(thisTrial) {
   };
 }
 
-
 function importConditions(loop) {
   const trialIndex = loop.getTrialIndex();
   return function () {
@@ -726,7 +679,6 @@ function importConditions(loop) {
     return Scheduler.Event.NEXT;
     };
 }
-
 
 function quitPsychoJS(isCompleted) {
   psychoJS.window.close();
