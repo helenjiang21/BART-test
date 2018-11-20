@@ -41,10 +41,10 @@ flowScheduler.add(trialsLoopEnd);
 flowScheduler.add(finalScoreRoutineBegin);
 flowScheduler.add(finalScoreRoutineEachFrame);
 flowScheduler.add(finalScoreRoutineEnd);
-flowScheduler.add(quitPsychoJS);
+flowScheduler.add(quitPsychoJS, true);
 
 // quit if user presses Cancel in dialog box:
-dialogCancelScheduler.add(quitPsychoJS);
+dialogCancelScheduler.add(quitPsychoJS, false);
 
 psychoJS.start({configURL: 'config.json', expInfo: expInfo});
 
@@ -62,7 +62,7 @@ function updateInfo() {
 
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
-
+  psychoJS.setRedirectUrls('completedURL', 'incompleteURL');
   return Scheduler.Event.NEXT;
 }
 
@@ -305,7 +305,7 @@ function trialsLoopBegin(thisScheduler) {
 
   // Schedule all the trials in the trialList:
   for (const thisTrial of trials) {
-    thisScheduler.add(importTrialAttributes(thisTrial));
+    thisScheduler.add(importConditions(trials));
     thisScheduler.add(trialRoutineBegin);
     thisScheduler.add(trialRoutineEachFrame);
     thisScheduler.add(trialRoutineEnd);
@@ -321,9 +321,6 @@ function trialsLoopBegin(thisScheduler) {
 
 function trialsLoopEnd() {
   psychoJS.experiment.removeLoop(trials);
-  psychoJS.experiment.save({
-    attributes: trials.getAttributes()
-  });
 
   return Scheduler.Event.NEXT;
 }
@@ -636,7 +633,7 @@ function finalScoreRoutineEachFrame() {
     doneKey.frameNStart = frameN;  // exact frame index
     doneKey.status = PsychoJS.Status.STARTED;
     // keyboard checking is just starting
-    doneKey.clock.reset();  // now t=0
+    psychoJS.window.callOnFlip(doneKey.clock.reset) // t = 0 on screen flip
     psychoJS.eventManager.clearEvents({eventType:'keyboard'});
   }
   if (doneKey.status === PsychoJS.Status.STARTED) {
@@ -714,18 +711,19 @@ function endLoopIteration(thisTrial) {
 }
 
 
-function importTrialAttributes(thisTrial) {
+function importConditions(loop) {
+  const trialIndex = loop.getTrialIndex();
   return function () {
-    psychoJS.importAttributes(thisTrial);
-
+    loop.setTrialIndex(trialIndex);
+    psychoJS.importAttributes(loop.getCurrentTrial());
     return Scheduler.Event.NEXT;
-  };
+    };
 }
 
 
-function quitPsychoJS() {
+function quitPsychoJS(isCompleted) {
   psychoJS.window.close();
-  psychoJS.quit();
+  psychoJS.quit({isCompleted});
 
   return Scheduler.Event.QUIT;
 }
