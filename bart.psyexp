@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="3.0.0b8">
+<PsychoPy2experiment encoding="utf-8" version="3.0.0b11">
   <Settings>
+    <Param name="Completed URL" updates="None" val="completedURL" valType="str"/>
     <Param name="Completion URL" updates="None" val="completionURL" valType="str"/>
     <Param name="Data filename" updates="None" val="'data' + os.sep + '%s_%s' % (expInfo['participant'], expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
@@ -8,6 +9,7 @@
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="incompleteURL" valType="str"/>
     <Param name="JS libs" updates="None" val="packaged" valType="str"/>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
     <Param name="Save csv file" updates="None" val="False" valType="bool"/>
@@ -150,7 +152,7 @@
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="if event.getKeys(['space']):&amp;#10;  nPumps=nPumps+1&amp;#10;  if nPumps&gt;maxPumps:&amp;#10;    popped=True&amp;#10;    continueRoutine=False&amp;#10;if event.getKeys(['return']):&amp;#10;    popped=False&amp;#10;    continueRoutine=False" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="var thisResp = psychoJS.eventManager.getKeys();&amp;#10;console.log(thisResp)&amp;#10;if (&quot;space&quot; == thisResp[0]) {&amp;#10;    nPumps = nPumps+1;&amp;#10;    if (nPumps &gt; maxPumps) {&amp;#10;        popped=true;&amp;#10;        continueRoutine=false;&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;if (&quot;return&quot; == thisResp[0]) {&amp;#10;    popped=false;&amp;#10;    continueRoutine=false;&amp;#10;}" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="var thisResp = psychoJS.eventManager.getKeys();&amp;#10;if (&quot;space&quot; == thisResp[0]) {&amp;#10;    nPumps = nPumps+1;&amp;#10;    if (nPumps &gt; maxPumps) {&amp;#10;        popped=true;&amp;#10;        continueRoutine=false;&amp;#10;    }&amp;#10;}&amp;#10;&amp;#10;if (&quot;return&quot; == thisResp[0]) {&amp;#10;    popped=false;&amp;#10;    continueRoutine=false;&amp;#10;}" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>

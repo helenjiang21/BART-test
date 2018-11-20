@@ -59,6 +59,7 @@ var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
+  expInfo['psychopyVersion'] = '3.0.0b11';
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -419,7 +420,6 @@ function trialRoutineEachFrame() {
     bankedMsg.setText(bankedText);
   }
   var thisResp = psychoJS.eventManager.getKeys();
-  console.log(thisResp)
   if ("space" == thisResp[0]) {
       nPumps = nPumps+1;
       if (nPumps > maxPumps) {
