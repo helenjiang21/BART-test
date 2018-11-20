@@ -71,6 +71,7 @@ function updateInfo() {
   // add info from the URL:
   util.addInfoFromUrl(expInfo);
   psychoJS.setRedirectUrls('completedURL', 'incompleteURL');
+
   return Scheduler.Event.NEXT;
 }
 
