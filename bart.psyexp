@@ -233,7 +233,7 @@
       <CodeComponent name="checkPopped">
         <Param name="Begin Experiment" updates="constant" val="from psychopy import sound&amp;#10;feedbackText=&quot;&quot;&amp;#10;bang = sound.Sound(&quot;bang.wav&quot;)&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="feedbackText=&quot;&quot;&amp;#10;&amp;#10;bang = new Sound({&amp;#10;    win: psychoJS.window,&amp;#10;    value: &quot;bang.mp3&quot;,&amp;#10;    secs: 1.0,&amp;#10;    });&amp;#10;&amp;#10;bang.setVolume(1);&amp;#10;&amp;#10;balloonBody.setSize(0.10)" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="if (popped == true) {&amp;#10;    feedbackText = &quot;Oops! Lost that one!&quot;;&amp;#10;} else {&amp;#10;    feedbackText=&quot;You banked £&quot; + lastBalloonEarnings.toFixed(2);&amp;#10;}" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="if (popped == true) {&amp;#10;    feedbackText = &quot;Oops! Lost that one!&quot;;&amp;#10;    bang.play();&amp;#10;} else {&amp;#10;    feedbackText=&quot;You banked £&quot; + lastBalloonEarnings.toFixed(2);&amp;#10;}" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="if popped==True:&amp;#10;  feedbackText=&quot;Oops! Lost that one!&quot;&amp;#10;  bang.play()&amp;#10;else:&amp;#10;  feedbackText=u&quot;You banked £%.2f&quot; %lastBalloonEarnings&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>

@@ -513,6 +513,7 @@ function feedbackRoutineBegin() {
   // update component parameters for each repeat
   if (popped == true) {
       feedbackText = "Oops! Lost that one!";
+      bang.play();
   } else {
       feedbackText="You banked £" + lastBalloonEarnings.toFixed(2);
   }
