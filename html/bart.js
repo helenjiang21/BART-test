@@ -8,6 +8,7 @@ import { TrialHandler } from './lib/data-3.0.0b11.js';
 import { Scheduler } from './lib/util-3.0.0b11.js';
 import * as util from './lib/util-3.0.0b11.js';
 import * as visual from './lib/visual-3.0.0b11.js';
+import { Sound } from './lib/sound-3.0.0b11.js';
 
 // init psychoJS:
 var psychoJS = new PsychoJS({
@@ -91,6 +92,7 @@ var balloonValMsg;
 var bankedMsg;
 var feedbackClock;
 var feedbackText;
+var bang;
 var feedbackMsg;
 var finalScoreClock;
 var finalScore_2;
@@ -162,13 +164,13 @@ function experimentInit() {
   feedbackClock = new util.Clock();
   feedbackText=""
   
-  //bang = new Sound({
-  //    win: psychoJS.window,
-  //    value: 'A',//"resources/bang.wav",
-  //    secs: 1.0,
-  //    });
+  bang = new Sound({
+      win: psychoJS.window,
+      value: "bang.mp3",
+      secs: 1.0,
+      });
   
-  //bang.setVolume(1);
+  bang.setVolume(1);
   
   balloonBody.setSize(0.10)
   feedbackMsg = new visual.TextStim({
