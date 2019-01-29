@@ -1,0 +1,2 @@
+nPumps, size, earnings, popped, trials.thisRepN, trials.thisTrialN, trials.thisN, trials.thisIndex, trials.ran, trials.order, imageFile, maxPumps, participant, gender (m/f), age, session, date, expName, psychopyVersion, frameRate
+10, 0.25, 0.5, false, 1, 0, 20, 5, 1, 19, blueBalloon.png, 32, , , , 004, 2019-01-29_12h28.27.202, bart, 3.0.0b11, 60
