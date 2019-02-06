@@ -1,0 +1,21 @@
+nPumps, size, earnings, popped, doneKey.keys, doneKey.rt, trials.thisRepN, trials.thisTrialN, trials.thisN, trials.thisIndex, trials.ran, trials.order, imageFile, maxPumps, participant, gender (m/f), age, session, date, expName, psychopyVersion, frameRate
+5, 0.175, 0.25, false, undefined, undefined, 1, 0, 20, 5, 1, 19, blueBalloon.png, 32, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.23500000000000001, 0.45, false, undefined, undefined, 1, 0, 20, 9, 1, 19, blueBalloon.png, 56, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+15, 0.31, 0, true, undefined, undefined, 1, 0, 20, 2, 1, 19, blueBalloon.png, 14, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+3, 0.13, 0, true, undefined, undefined, 1, 0, 20, 0, 1, 19, blueBalloon.png, 2, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+4, 0.16, 0.2, false, undefined, undefined, 1, 0, 20, 15, 1, 19, blueBalloon.png, 92, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+5, 0.175, 0.25, false, undefined, undefined, 1, 0, 20, 10, 1, 19, blueBalloon.png, 62, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+6, 0.19, 0.30000000000000004, false, undefined, undefined, 1, 0, 20, 7, 1, 19, blueBalloon.png, 44, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+7, 0.20500000000000002, 0.35000000000000003, false, undefined, undefined, 1, 0, 20, 13, 1, 19, blueBalloon.png, 80, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+8, 0.22, 0.4, false, undefined, undefined, 1, 0, 20, 11, 1, 19, blueBalloon.png, 68, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.23500000000000001, 0.45, false, undefined, undefined, 1, 0, 20, 17, 1, 19, blueBalloon.png, 104, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.22, 0, true, undefined, undefined, 1, 0, 20, 1, 1, 19, blueBalloon.png, 8, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+7, 0.20500000000000002, 0.35000000000000003, false, undefined, undefined, 1, 0, 20, 6, 1, 19, blueBalloon.png, 38, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+6, 0.19, 0.30000000000000004, false, undefined, undefined, 1, 0, 20, 4, 1, 19, blueBalloon.png, 26, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.23500000000000001, 0.45, false, undefined, undefined, 1, 0, 20, 19, 1, 19, blueBalloon.png, 116, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.23500000000000001, 0.45, false, undefined, undefined, 1, 0, 20, 18, 1, 19, blueBalloon.png, 110, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+8, 0.22, 0.4, false, undefined, undefined, 1, 0, 20, 16, 1, 19, blueBalloon.png, 98, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+8, 0.22, 0.4, false, undefined, undefined, 1, 0, 20, 8, 1, 19, blueBalloon.png, 50, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+9, 0.23500000000000001, 0.45, false, undefined, undefined, 1, 0, 20, 12, 1, 19, blueBalloon.png, 74, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+10, 0.25, 0.5, false, undefined, undefined, 1, 0, 20, 3, 1, 19, blueBalloon.png, 20, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
+11, 0.265, 0.55, false, undefined, undefined, 1, 0, 20, 14, 1, 19, blueBalloon.png, 86, 001, m, 26, 001, 2019-01-27_15h05.57.903, bart, 3.0.0b11, 60
