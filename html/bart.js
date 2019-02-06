@@ -1,14 +1,14 @@
-/************* 
+﻿/************* 
  * Bart Test *
  *************/
 
-import { PsychoJS } from './lib/core-3.0.0b11.js';
-import * as core from './lib/core-3.0.0b11.js';
-import { TrialHandler } from './lib/data-3.0.0b11.js';
-import { Scheduler } from './lib/util-3.0.0b11.js';
-import * as util from './lib/util-3.0.0b11.js';
-import * as visual from './lib/visual-3.0.0b11.js';
-import { Sound } from './lib/sound-3.0.0b11.js';
+import { PsychoJS } from './lib/core-3.0.3.js';
+import * as core from './lib/core-3.0.3.js';
+import { TrialHandler } from './lib/data-3.0.3.js';
+import { Scheduler } from './lib/util-3.0.3.js';
+import * as util from './lib/util-3.0.3.js';
+import * as visual from './lib/visual-3.0.3.js';
+import { Sound } from './lib/sound-3.0.3.js';
 
 // init psychoJS:
 var psychoJS = new PsychoJS({
@@ -19,7 +19,7 @@ var psychoJS = new PsychoJS({
 psychoJS.openWindow({
   fullscr: true,
   color: new util.Color([0, 0, 0]),
-  units: 'use prefs'
+  units: 'height'
 });
 
 // store info about the experiment session:
@@ -49,10 +49,10 @@ flowScheduler.add(trialsLoopEnd);
 flowScheduler.add(finalScoreRoutineBegin);
 flowScheduler.add(finalScoreRoutineEachFrame);
 flowScheduler.add(finalScoreRoutineEnd);
-flowScheduler.add(quitPsychoJS, true);
+flowScheduler.add(quitPsychoJS, '', true);
 
 // quit if user presses Cancel in dialog box:
-dialogCancelScheduler.add(quitPsychoJS, false);
+dialogCancelScheduler.add(quitPsychoJS, '', false);
 
 psychoJS.start({configURL: 'config.json', expInfo: expInfo});
 
@@ -60,7 +60,7 @@ var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
-  expInfo['psychopyVersion'] = '3.0.0b11';
+  expInfo['psychopyVersion'] = '3.0.3';
 
   // store frame rate of monitor if we can measure it successfully
   expInfo['frameRate'] = psychoJS.window.getActualFrameRate();
@@ -102,13 +102,13 @@ function experimentInit() {
   // Initialize components for Routine "instructions"
   instructionsClock = new util.Clock();
   instrMessage = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'instrMessage',
-    text : "This is a game where you have to optimise your earnings in a balloon pumping competition.\n\nYou get prize money for each balloon you pump up, according to its size. But if you pump it too far it will pop and you'll get nothing for that balloon.\n\nBalloons differ in their maximum size - they can occasionally reach to almost the size of the screen but most will pop well before that.\n\nPress\n    SPACE to pump the balloon\n    RETURN to bank the cash for this balloon and move onto the next\n",
-    font : 'Arial',
-    units : 'height',   pos : [0, 0], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : 0.0 
+    win: psychoJS.window,
+    name: 'instrMessage',
+    text: "This is a game where you have to optimise your earnings in a balloon pumping competition.\n\nYou get prize money for each balloon you pump up, according to its size. But if you pump it too far it will pop and you'll get nothing for that balloon.\n\nBalloons differ in their maximum size - they can occasionally reach to almost the size of the screen but most will pop well before that.\n\nPress\n    SPACE to pump the balloon\n    RETURN to bank the cash for this balloon and move onto the next\n",
+    font: 'Arial',
+    units : 'height',   pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: 0.0 
   });
   
   // Initialize components for Routine "trial"
@@ -125,38 +125,38 @@ function experimentInit() {
     name : 'balloonBody', units : 'height', 
     image : 'redBalloon.png', mask : undefined,
     ori : (- 90), pos : [0, 0], size : 1.0,
-    color : new util.Color ([1, 1, 1]), opacity : 1,
+    color : new util.Color([1, 1, 1]), opacity : 1,
     flipHoriz : false, flipVert : false,
     texRes : 128, interpolate : true, depth : -2.0 
   });
   reminderMsg = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'reminderMsg',
-    text : 'Press SPACE to pump the balloon\nPress RETURN to bank this sum',
-    font : 'Arial',
-    units : 'height',   pos : [0, (- 0.8)], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : -3.0 
+    win: psychoJS.window,
+    name: 'reminderMsg',
+    text: 'Press SPACE to pump the balloon\nPress RETURN to bank this sum',
+    font: 'Arial',
+    units : 'height',   pos: [0, (- 0.8)], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -3.0 
   });
   
   balloonValMsg = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'balloonValMsg',
-    text : 'default text',
-    font : 'Arial',
-    units : 'height',   pos : [0, 0.05], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : -4.0 
+    win: psychoJS.window,
+    name: 'balloonValMsg',
+    text: 'default text',
+    font: 'Arial',
+    units : 'height',   pos: [0, 0.05], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -4.0 
   });
   
   bankedMsg = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'bankedMsg',
-    text : 'default text',
-    font : 'Arial',
-    units : 'height',   pos : [0, 0.8], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : -5.0 
+    win: psychoJS.window,
+    name: 'bankedMsg',
+    text: 'default text',
+    font: 'Arial',
+    units : 'height',   pos: [0, 0.8], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -5.0 
   });
   
   
@@ -174,26 +174,26 @@ function experimentInit() {
   
   balloonBody.setSize(0.10)
   feedbackMsg = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'feedbackMsg',
-    text : 'default text',
-    font : 'Arial',
-    units : 'height',   pos : [0, 0], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : -1.0 
+    win: psychoJS.window,
+    name: 'feedbackMsg',
+    text: 'default text',
+    font: 'Arial',
+    units : 'height',   pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
   });
   
   // Initialize components for Routine "finalScore"
   finalScoreClock = new util.Clock();
   
   finalScore_2 = new visual.TextStim({
-    win : psychoJS.window,
-    name : 'finalScore_2',
-    text : 'default text',
-    font : 'Arial',
-    units : 'height',   pos : [0, 0], height : 0.025,  wrapWidth : undefined, ori: 0,
-    color : new util.Color('white'),  opacity : 1,
-    depth : -1.0 
+    win: psychoJS.window,
+    name: 'finalScore_2',
+    text: 'default text',
+    font: 'Arial',
+    units : 'height',   pos: [0, 0], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
   });
   
   // Create some handy timers
@@ -242,6 +242,7 @@ function instructionsRoutineEachFrame() {
     instrMessage.frameNStart = frameN;  // exact frame index
     instrMessage.setAutoDraw(true);
   }
+
   
   // *resp* updates
   if (t >= 0.0 && resp.status === PsychoJS.Status.NOT_STARTED) {
@@ -252,11 +253,12 @@ function instructionsRoutineEachFrame() {
     // keyboard checking is just starting
     psychoJS.eventManager.clearEvents({eventType:'keyboard'});
   }
+
   if (resp.status === PsychoJS.Status.STARTED) {
     let theseKeys = psychoJS.eventManager.getKeys({keyList:['space']});
     
     // check for quit:
-    if ("escape" in theseKeys) {
+    if (theseKeys.indexOf('escape') > -1) {
         psychoJS.experiment.experimentEnded = true;
     }
     if (theseKeys.length > 0) {  // at least one key was pressed
@@ -264,21 +266,23 @@ function instructionsRoutineEachFrame() {
       continueRoutine = false;
     }
   }
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
   
   // check if the Routine should terminate
   if (!continueRoutine) {  // a component has requested a forced-end of Routine
     return Scheduler.Event.NEXT;
   }
+  
   continueRoutine = false;// reverts to True if at least one component still running
   for (const thisComponent of instructionsComponents)
-    if ('status' in thisComponent && thisComponent.status != PsychoJS.Status.FINISHED) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
       continueRoutine = true;
       break;
     }
-  // check for quit (the Esc key)
-  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-    psychoJS.quit('The [Escape] key was pressed. Goodbye!');
-  }
+  
   
   // refresh the screen if continuing
   if (continueRoutine) {
@@ -388,6 +392,7 @@ function trialRoutineEachFrame() {
     balloonBody.frameNStart = frameN;  // exact frame index
     balloonBody.setAutoDraw(true);
   }
+
   if (balloonBody.status === PsychoJS.Status.STARTED){ // only update if being drawn
     balloonBody.setPos([0, ((balloonSize / 2) - 0.5)]);
     balloonBody.setSize(balloonSize);
@@ -400,6 +405,7 @@ function trialRoutineEachFrame() {
     reminderMsg.frameNStart = frameN;  // exact frame index
     reminderMsg.setAutoDraw(true);
   }
+
   
   // *balloonValMsg* updates
   if (t >= 0.0 && balloonValMsg.status === PsychoJS.Status.NOT_STARTED) {
@@ -408,6 +414,7 @@ function trialRoutineEachFrame() {
     balloonValMsg.frameNStart = frameN;  // exact frame index
     balloonValMsg.setAutoDraw(true);
   }
+
   if (balloonValMsg.status === PsychoJS.Status.STARTED){ // only update if being drawn
     balloonValMsg.setText(balloonEarnings);
   }
@@ -419,6 +426,7 @@ function trialRoutineEachFrame() {
     bankedMsg.frameNStart = frameN;  // exact frame index
     bankedMsg.setAutoDraw(true);
   }
+
   if (bankedMsg.status === PsychoJS.Status.STARTED){ // only update if being drawn
     bankedMsg.setText(bankedText);
   }
@@ -445,11 +453,12 @@ function trialRoutineEachFrame() {
     // keyboard checking is just starting
     psychoJS.eventManager.clearEvents({eventType:'keyboard'});
   }
+
   if (bankButton.status === PsychoJS.Status.STARTED) {
     let theseKeys = psychoJS.eventManager.getKeys({keyList:['return']});
     
     // check for quit:
-    if ("escape" in theseKeys) {
+    if (theseKeys.indexOf('escape') > -1) {
         psychoJS.experiment.experimentEnded = true;
     }
     if (theseKeys.length > 0) {  // at least one key was pressed
@@ -457,21 +466,23 @@ function trialRoutineEachFrame() {
       continueRoutine = false;
     }
   }
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
+  }
   
   // check if the Routine should terminate
   if (!continueRoutine) {  // a component has requested a forced-end of Routine
     return Scheduler.Event.NEXT;
   }
+  
   continueRoutine = false;// reverts to True if at least one component still running
   for (const thisComponent of trialComponents)
-    if ('status' in thisComponent && thisComponent.status != PsychoJS.Status.FINISHED) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
       continueRoutine = true;
       break;
     }
-  // check for quit (the Esc key)
-  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-    psychoJS.quit('The [Escape] key was pressed. Goodbye!');
-  }
+  
   
   // refresh the screen if continuing
   if (continueRoutine) {
@@ -554,25 +565,28 @@ function feedbackRoutineEachFrame() {
     feedbackMsg.frameNStart = frameN;  // exact frame index
     feedbackMsg.setAutoDraw(true);
   }
+
   frameRemains = 0.0 + 1.5 - psychoJS.window.monitorFramePeriod * 0.75;  // most of one frame period left
   if (feedbackMsg.status === PsychoJS.Status.STARTED && t >= frameRemains) {
     feedbackMsg.setAutoDraw(false);
+  }
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
   }
   
   // check if the Routine should terminate
   if (!continueRoutine) {  // a component has requested a forced-end of Routine
     return Scheduler.Event.NEXT;
   }
+  
   continueRoutine = false;// reverts to True if at least one component still running
   for (const thisComponent of feedbackComponents)
-    if ('status' in thisComponent && thisComponent.status != PsychoJS.Status.FINISHED) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
       continueRoutine = true;
       break;
     }
-  // check for quit (the Esc key)
-  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-    psychoJS.quit('The [Escape] key was pressed. Goodbye!');
-  }
+  
   
   // refresh the screen if continuing
   if (continueRoutine && routineTimer.getTime() > 0) {
@@ -636,6 +650,7 @@ function finalScoreRoutineEachFrame() {
     finalScore_2.frameNStart = frameN;  // exact frame index
     finalScore_2.setAutoDraw(true);
   }
+
   
   // *doneKey* updates
   if (t >= 0.0 && doneKey.status === PsychoJS.Status.NOT_STARTED) {
@@ -644,38 +659,41 @@ function finalScoreRoutineEachFrame() {
     doneKey.frameNStart = frameN;  // exact frame index
     doneKey.status = PsychoJS.Status.STARTED;
     // keyboard checking is just starting
-    psychoJS.window.callOnFlip(doneKey.clock.reset) // t = 0 on screen flip
+    psychoJS.window.callOnFlip(function() { doneKey.clock.reset(); }); // t = 0 on screen flip
     psychoJS.eventManager.clearEvents({eventType:'keyboard'});
   }
+
   if (doneKey.status === PsychoJS.Status.STARTED) {
     let theseKeys = psychoJS.eventManager.getKeys();
     
     // check for quit:
-    if ("escape" in theseKeys) {
+    if (theseKeys.indexOf('escape') > -1) {
         psychoJS.experiment.experimentEnded = true;
     }
     if (theseKeys.length > 0) {  // at least one key was pressed
-      doneKey.keys = theseKeys[theseKeys.length-1]  // just the last key pressed
+      doneKey.keys = theseKeys[theseKeys.length-1];  // just the last key pressed
       doneKey.rt = doneKey.clock.getTime();
       // a response ends the routine
       continueRoutine = false;
     }
+  }
+  // check for quit (typically the Esc key)
+  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
+    return psychoJS.quit('The [Escape] key was pressed. Goodbye!', false);
   }
   
   // check if the Routine should terminate
   if (!continueRoutine) {  // a component has requested a forced-end of Routine
     return Scheduler.Event.NEXT;
   }
+  
   continueRoutine = false;// reverts to True if at least one component still running
   for (const thisComponent of finalScoreComponents)
-    if ('status' in thisComponent && thisComponent.status != PsychoJS.Status.FINISHED) {
+    if ('status' in thisComponent && thisComponent.status !== PsychoJS.Status.FINISHED) {
       continueRoutine = true;
       break;
     }
-  // check for quit (the Esc key)
-  if (psychoJS.experiment.experimentEnded || psychoJS.eventManager.getKeys({keyList:['escape']}).length > 0) {
-    psychoJS.quit('The [Escape] key was pressed. Goodbye!');
-  }
+  
   
   // refresh the screen if continuing
   if (continueRoutine) {
@@ -695,15 +713,18 @@ function finalScoreRoutineEnd() {
     }
   }
   
+  
   // check responses
-  if (['', [], undefined].indexOf(doneKey.keys) >= 0) {    // No response was made
+  if (doneKey.keys === undefined || doneKey.keys.length === 0) {    // No response was made
       doneKey.keys = undefined;
   }
+  
   psychoJS.experiment.addData('doneKey.keys', doneKey.keys);
-  if (doneKey.keys != undefined) {  // we had a response
+  if (typeof doneKey.keys !== 'undefined') {  // we had a response
       psychoJS.experiment.addData('doneKey.rt', doneKey.rt);
       routineTimer.reset();
       }
+  
   // the Routine "finalScore" was not non-slip safe, so reset the non-slip timer
   routineTimer.reset();
   
@@ -732,9 +753,9 @@ function importConditions(loop) {
 }
 
 
-function quitPsychoJS(isCompleted) {
+function quitPsychoJS(message, isCompleted) {
   psychoJS.window.close();
-  psychoJS.quit({isCompleted});
+  psychoJS.quit({message, isCompleted});
 
   return Scheduler.Event.QUIT;
 }
