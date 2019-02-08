@@ -1,0 +1,21 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+33,0.58,0,TRUE,1,0,20,5,1,19,blueBalloon.png,32,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+27,0.505,1.35,FALSE,1,0,20,9,1,19,blueBalloon.png,56,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+15,0.31,0,TRUE,1,0,20,2,1,19,blueBalloon.png,14,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+3,0.13,0,TRUE,1,0,20,0,1,19,blueBalloon.png,2,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+21,0.415,1.05,FALSE,1,0,20,15,1,19,blueBalloon.png,92,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,10,1,19,blueBalloon.png,62,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,7,1,19,blueBalloon.png,44,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,13,1,19,blueBalloon.png,80,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,11,1,19,blueBalloon.png,68,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,17,1,19,blueBalloon.png,104,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+9,0.22,0,TRUE,1,0,20,1,1,19,blueBalloon.png,8,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,6,1,19,blueBalloon.png,38,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,4,1,19,blueBalloon.png,26,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,19,1,19,blueBalloon.png,116,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,18,1,19,blueBalloon.png,110,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+21,0.415,1.05,FALSE,1,0,20,16,1,19,blueBalloon.png,98,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,8,1,19,blueBalloon.png,50,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,12,1,19,blueBalloon.png,74,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+21,0.4,0,TRUE,1,0,20,3,1,19,blueBalloon.png,20,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
+21,0.415,1.05,FALSE,1,0,20,14,1,19,blueBalloon.png,86,izas,f,36,004,2019-02-08_11h15.01.066,bart,3.0.3,60
