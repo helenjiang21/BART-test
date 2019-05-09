@@ -1,0 +1,21 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+33,0.58,0,TRUE,1,0,20,5,1,19,blueBalloon.png,32,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+22,0.43,1.1,FALSE,1,0,20,9,1,19,blueBalloon.png,56,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+15,0.31,0,TRUE,1,0,20,2,1,19,blueBalloon.png,14,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+3,0.13,0,TRUE,1,0,20,0,1,19,blueBalloon.png,2,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+25,0.475,1.25,FALSE,1,0,20,15,1,19,blueBalloon.png,92,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+12,0.28,0.6,FALSE,1,0,20,10,1,19,blueBalloon.png,62,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+8,0.22,0.4,FALSE,1,0,20,7,1,19,blueBalloon.png,44,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+9,0.235,0.45,FALSE,1,0,20,13,1,19,blueBalloon.png,80,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+13,0.295,0.65,FALSE,1,0,20,11,1,19,blueBalloon.png,68,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+19,0.385,0.95,FALSE,1,0,20,17,1,19,blueBalloon.png,104,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+9,0.22,0,TRUE,1,0,20,1,1,19,blueBalloon.png,8,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+15,0.325,0.75,FALSE,1,0,20,6,1,19,blueBalloon.png,38,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+21,0.415,1.05,FALSE,1,0,20,4,1,19,blueBalloon.png,26,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+45,0.775,2.25,FALSE,1,0,20,19,1,19,blueBalloon.png,116,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+44,0.76,2.2,FALSE,1,0,20,18,1,19,blueBalloon.png,110,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+55,0.925,2.75,FALSE,1,0,20,16,1,19,blueBalloon.png,98,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+51,0.85,0,TRUE,1,0,20,8,1,19,blueBalloon.png,50,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+53,0.895,2.65,FALSE,1,0,20,12,1,19,blueBalloon.png,74,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+21,0.4,0,TRUE,1,0,20,3,1,19,blueBalloon.png,20,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
+54,0.91,2.7,FALSE,1,0,20,14,1,19,blueBalloon.png,86,a,m,33,004,2019-05-09_09h16.39.676,bart,3.0.3,60
