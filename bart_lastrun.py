@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v3.0.0b8),
-    on August 29, 2018, at 13:38
+This experiment was created using PsychoPy3 Experiment Builder (v3.0.3),
+    on February 07, 2019, at 11:16
 If you publish work using this script please cite the PsychoPy publications:
     Peirce, JW (2007) PsychoPy - Psychophysics software in Python.
         Journal of Neuroscience Methods, 162(1-2), 8-13.
@@ -21,11 +21,13 @@ from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
+
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
+psychopyVersion = '3.0.3'
 expName = 'bart'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'gender (m/f)': '', 'age': '', 'session': '004'}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
@@ -33,6 +35,7 @@ if dlg.OK == False:
     core.quit()  # user pressed cancel
 expInfo['date'] = data.getDateStr()  # add a simple timestamp
 expInfo['expName'] = expName
+expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
 filename = _thisDir + os.sep + 'data' + os.sep + '%s_%s' % (expInfo['participant'], expInfo['date'])
@@ -152,6 +155,10 @@ resp = event.BuilderKeyResponse()
 # keep track of which components have finished
 instructionsComponents = [instrMessage, resp]
 for thisComponent in instructionsComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
@@ -165,15 +172,17 @@ while continueRoutine:
     # *instrMessage* updates
     if t >= 0.0 and instrMessage.status == NOT_STARTED:
         # keep track of start time/frame for later
-        instrMessage.tStart = t
+        instrMessage.tStart = t  # not accounting for scr refresh
         instrMessage.frameNStart = frameN  # exact frame index
+        win.timeOnFlip(instrMessage, 'tStartRefresh')  # time at next scr refresh
         instrMessage.setAutoDraw(True)
     
     # *resp* updates
     if t >= 0.0 and resp.status == NOT_STARTED:
         # keep track of start time/frame for later
-        resp.tStart = t
+        resp.tStart = t  # not accounting for scr refresh
         resp.frameNStart = frameN  # exact frame index
+        win.timeOnFlip(resp, 'tStartRefresh')  # time at next scr refresh
         resp.status = STARTED
         # keyboard checking is just starting
         event.clearEvents(eventType='keyboard')
@@ -187,6 +196,10 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -196,10 +209,6 @@ while continueRoutine:
             continueRoutine = True
             break  # at least one component has not yet finished
     
-    # check for quit (the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
-    
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
@@ -208,6 +217,8 @@ while continueRoutine:
 for thisComponent in instructionsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+thisExp.addData('instrMessage.started', instrMessage.tStartRefresh)
+thisExp.addData('instrMessage.stopped', instrMessage.tStopRefresh)
 # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
@@ -245,6 +256,10 @@ for thisTrial in trials:
     # keep track of which components have finished
     trialComponents = [balloonBody, reminderMsg, balloonValMsg, bankedMsg, bankButton]
     for thisComponent in trialComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
     
@@ -262,8 +277,9 @@ for thisTrial in trials:
         # *balloonBody* updates
         if t >= 0.0 and balloonBody.status == NOT_STARTED:
             # keep track of start time/frame for later
-            balloonBody.tStart = t
+            balloonBody.tStart = t  # not accounting for scr refresh
             balloonBody.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(balloonBody, 'tStartRefresh')  # time at next scr refresh
             balloonBody.setAutoDraw(True)
         if balloonBody.status == STARTED:  # only update if drawing
             balloonBody.setPos([0, balloonSize/2-.5], log=False)
@@ -272,15 +288,17 @@ for thisTrial in trials:
         # *reminderMsg* updates
         if t >= 0.0 and reminderMsg.status == NOT_STARTED:
             # keep track of start time/frame for later
-            reminderMsg.tStart = t
+            reminderMsg.tStart = t  # not accounting for scr refresh
             reminderMsg.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(reminderMsg, 'tStartRefresh')  # time at next scr refresh
             reminderMsg.setAutoDraw(True)
         
         # *balloonValMsg* updates
         if t >= 0.0 and balloonValMsg.status == NOT_STARTED:
             # keep track of start time/frame for later
-            balloonValMsg.tStart = t
+            balloonValMsg.tStart = t  # not accounting for scr refresh
             balloonValMsg.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(balloonValMsg, 'tStartRefresh')  # time at next scr refresh
             balloonValMsg.setAutoDraw(True)
         if balloonValMsg.status == STARTED:  # only update if drawing
             balloonValMsg.setText(balloonEarnings, log=False)
@@ -288,8 +306,9 @@ for thisTrial in trials:
         # *bankedMsg* updates
         if t >= 0.0 and bankedMsg.status == NOT_STARTED:
             # keep track of start time/frame for later
-            bankedMsg.tStart = t
+            bankedMsg.tStart = t  # not accounting for scr refresh
             bankedMsg.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(bankedMsg, 'tStartRefresh')  # time at next scr refresh
             bankedMsg.setAutoDraw(True)
         if bankedMsg.status == STARTED:  # only update if drawing
             bankedMsg.setText(bankedText, log=False)
@@ -305,8 +324,9 @@ for thisTrial in trials:
         # *bankButton* updates
         if t >= 0.0 and bankButton.status == NOT_STARTED:
             # keep track of start time/frame for later
-            bankButton.tStart = t
+            bankButton.tStart = t  # not accounting for scr refresh
             bankButton.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(bankButton, 'tStartRefresh')  # time at next scr refresh
             bankButton.status = STARTED
             # keyboard checking is just starting
             event.clearEvents(eventType='keyboard')
@@ -320,6 +340,10 @@ for thisTrial in trials:
                 # a response ends the routine
                 continueRoutine = False
         
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
+        
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
             break
@@ -328,10 +352,6 @@ for thisTrial in trials:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
-        
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
         
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -354,6 +374,14 @@ for thisTrial in trials:
     trials.addData('popped', popped)
     
     
+    trials.addData('balloonBody.started', balloonBody.tStartRefresh)
+    trials.addData('balloonBody.stopped', balloonBody.tStopRefresh)
+    trials.addData('reminderMsg.started', reminderMsg.tStartRefresh)
+    trials.addData('reminderMsg.stopped', reminderMsg.tStopRefresh)
+    trials.addData('balloonValMsg.started', balloonValMsg.tStartRefresh)
+    trials.addData('balloonValMsg.stopped', balloonValMsg.tStopRefresh)
+    trials.addData('bankedMsg.started', bankedMsg.tStartRefresh)
+    trials.addData('bankedMsg.stopped', bankedMsg.tStopRefresh)
     
     # the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -375,6 +403,10 @@ for thisTrial in trials:
     # keep track of which components have finished
     feedbackComponents = [feedbackMsg]
     for thisComponent in feedbackComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
     
@@ -389,12 +421,21 @@ for thisTrial in trials:
         # *feedbackMsg* updates
         if t >= 0.0 and feedbackMsg.status == NOT_STARTED:
             # keep track of start time/frame for later
-            feedbackMsg.tStart = t
+            feedbackMsg.tStart = t  # not accounting for scr refresh
             feedbackMsg.frameNStart = frameN  # exact frame index
+            win.timeOnFlip(feedbackMsg, 'tStartRefresh')  # time at next scr refresh
             feedbackMsg.setAutoDraw(True)
         frameRemains = 0.0 + 1.5- win.monitorFramePeriod * 0.75  # most of one frame period left
         if feedbackMsg.status == STARTED and t >= frameRemains:
+            # keep track of stop time/frame for later
+            feedbackMsg.tStop = t  # not accounting for scr refresh
+            feedbackMsg.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(feedbackMsg, 'tStopRefresh')  # time at next scr refresh
             feedbackMsg.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if endExpNow or event.getKeys(keyList=["escape"]):
+            core.quit()
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -405,10 +446,6 @@ for thisTrial in trials:
                 continueRoutine = True
                 break  # at least one component has not yet finished
         
-        # check for quit (the Esc key)
-        if endExpNow or event.getKeys(keyList=["escape"]):
-            core.quit()
-        
         # refresh the screen
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
@@ -418,6 +455,8 @@ for thisTrial in trials:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     
+    trials.addData('feedbackMsg.started', feedbackMsg.tStartRefresh)
+    trials.addData('feedbackMsg.stopped', feedbackMsg.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 1.0 repeats of 'trials'
@@ -444,6 +483,10 @@ doneKey = event.BuilderKeyResponse()
 # keep track of which components have finished
 finalScoreComponents = [finalScore_2, doneKey]
 for thisComponent in finalScoreComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
 
@@ -458,15 +501,17 @@ while continueRoutine:
     # *finalScore_2* updates
     if t >= 0.0 and finalScore_2.status == NOT_STARTED:
         # keep track of start time/frame for later
-        finalScore_2.tStart = t
+        finalScore_2.tStart = t  # not accounting for scr refresh
         finalScore_2.frameNStart = frameN  # exact frame index
+        win.timeOnFlip(finalScore_2, 'tStartRefresh')  # time at next scr refresh
         finalScore_2.setAutoDraw(True)
     
     # *doneKey* updates
     if t >= 0.0 and doneKey.status == NOT_STARTED:
         # keep track of start time/frame for later
-        doneKey.tStart = t
+        doneKey.tStart = t  # not accounting for scr refresh
         doneKey.frameNStart = frameN  # exact frame index
+        win.timeOnFlip(doneKey, 'tStartRefresh')  # time at next scr refresh
         doneKey.status = STARTED
         # keyboard checking is just starting
         win.callOnFlip(doneKey.clock.reset)  # t=0 on next screen flip
@@ -483,6 +528,10 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
+    # check for quit (typically the Esc key)
+    if endExpNow or event.getKeys(keyList=["escape"]):
+        core.quit()
+    
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
         break
@@ -491,10 +540,6 @@ while continueRoutine:
         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
             continueRoutine = True
             break  # at least one component has not yet finished
-    
-    # check for quit (the Esc key)
-    if endExpNow or event.getKeys(keyList=["escape"]):
-        core.quit()
     
     # refresh the screen
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
@@ -505,12 +550,16 @@ for thisComponent in finalScoreComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
+thisExp.addData('finalScore_2.started', finalScore_2.tStartRefresh)
+thisExp.addData('finalScore_2.stopped', finalScore_2.tStopRefresh)
 # check responses
 if doneKey.keys in ['', [], None]:  # No response was made
     doneKey.keys=None
 thisExp.addData('doneKey.keys',doneKey.keys)
 if doneKey.keys != None:  # we had a response
     thisExp.addData('doneKey.rt', doneKey.rt)
+thisExp.addData('doneKey.started', doneKey.tStartRefresh)
+thisExp.addData('doneKey.stopped', doneKey.tStopRefresh)
 thisExp.nextEntry()
 # the Routine "finalScore" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
