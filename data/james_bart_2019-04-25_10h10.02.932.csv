@@ -1,0 +1,21 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+23,0.445,1.15,FALSE,1,0,20,5,1,19,blueBalloon.png,32,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+23,0.445,1.15,FALSE,1,0,20,9,1,19,blueBalloon.png,56,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+15,0.31,0,TRUE,1,0,20,2,1,19,blueBalloon.png,14,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+3,0.13,0,TRUE,1,0,20,0,1,19,blueBalloon.png,2,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+4,0.16,0.2,FALSE,1,0,20,15,1,19,blueBalloon.png,92,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+16,0.34,0.8,FALSE,1,0,20,10,1,19,blueBalloon.png,62,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+15,0.325,0.75,FALSE,1,0,20,7,1,19,blueBalloon.png,44,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+37,0.655,1.85,FALSE,1,0,20,13,1,19,blueBalloon.png,80,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+8,0.22,0.4,FALSE,1,0,20,11,1,19,blueBalloon.png,68,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+40,0.7,2,FALSE,1,0,20,17,1,19,blueBalloon.png,104,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+9,0.22,0,TRUE,1,0,20,1,1,19,blueBalloon.png,8,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+39,0.67,0,TRUE,1,0,20,6,1,19,blueBalloon.png,38,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+27,0.49,0,TRUE,1,0,20,4,1,19,blueBalloon.png,26,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+20,0.4,1,FALSE,1,0,20,19,1,19,blueBalloon.png,116,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+23,0.445,1.15,FALSE,1,0,20,18,1,19,blueBalloon.png,110,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+30,0.55,1.5,FALSE,1,0,20,16,1,19,blueBalloon.png,98,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+38,0.67,1.9,FALSE,1,0,20,8,1,19,blueBalloon.png,50,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+35,0.625,1.75,FALSE,1,0,20,12,1,19,blueBalloon.png,74,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+10,0.25,0.5,FALSE,1,0,20,3,1,19,blueBalloon.png,20,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60
+27,0.505,1.35,FALSE,1,0,20,14,1,19,blueBalloon.png,86,james,m,36,004,2019-04-25_10h10.02.932,bart,3.0.3,60

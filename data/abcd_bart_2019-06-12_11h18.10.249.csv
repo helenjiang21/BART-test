@@ -1,0 +1,21 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+16,0.34,0.8,FALSE,1,0,20,5,1,19,blueBalloon.png,32,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+22,0.43,1.1,FALSE,1,0,20,9,1,19,blueBalloon.png,56,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+15,0.31,0,TRUE,1,0,20,2,1,19,blueBalloon.png,14,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+3,0.13,0,TRUE,1,0,20,0,1,19,blueBalloon.png,2,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+16,0.34,0.8,FALSE,1,0,20,15,1,19,blueBalloon.png,92,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+17,0.355,0.85,FALSE,1,0,20,10,1,19,blueBalloon.png,62,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+21,0.415,1.05,FALSE,1,0,20,7,1,19,blueBalloon.png,44,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+31,0.565,1.55,FALSE,1,0,20,13,1,19,blueBalloon.png,80,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+48,0.82,2.4,FALSE,1,0,20,11,1,19,blueBalloon.png,68,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+0,0.1,0,FALSE,1,0,20,17,1,19,blueBalloon.png,104,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+0,0.1,0,FALSE,1,0,20,1,1,19,blueBalloon.png,8,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+39,0.67,0,TRUE,1,0,20,6,1,19,blueBalloon.png,38,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+27,0.49,0,TRUE,1,0,20,4,1,19,blueBalloon.png,26,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+1,0.115,0.05,FALSE,1,0,20,19,1,19,blueBalloon.png,116,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+25,0.475,1.25,FALSE,1,0,20,18,1,19,blueBalloon.png,110,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+22,0.43,1.1,FALSE,1,0,20,16,1,19,blueBalloon.png,98,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+31,0.565,1.55,FALSE,1,0,20,8,1,19,blueBalloon.png,50,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+35,0.625,1.75,FALSE,1,0,20,12,1,19,blueBalloon.png,74,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+21,0.4,0,TRUE,1,0,20,3,1,19,blueBalloon.png,20,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
+25,0.475,1.25,FALSE,1,0,20,14,1,19,blueBalloon.png,86,abcd,m,60,004,2019-06-12_11h18.10.249,bart,3.0.3,60
