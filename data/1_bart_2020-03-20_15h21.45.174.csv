@@ -1,0 +1,14 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+20,0.4,1,FALSE,1,0,20,5,1,19,blueBalloon.png,32,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+8,0.22,0.4,FALSE,1,0,20,9,1,19,blueBalloon.png,56,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+14,0.31,0.7,FALSE,1,0,20,2,1,19,blueBalloon.png,14,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+3,0.13,0,TRUE,1,0,20,0,1,19,blueBalloon.png,2,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+2,0.13,0.1,FALSE,1,0,20,15,1,19,blueBalloon.png,92,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+11,0.265,0.55,FALSE,1,0,20,10,1,19,blueBalloon.png,62,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+0,0.1,0,FALSE,1,0,20,7,1,19,blueBalloon.png,44,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+0,0.1,0,FALSE,1,0,20,13,1,19,blueBalloon.png,80,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+1,0.115,0.05,FALSE,1,0,20,11,1,19,blueBalloon.png,68,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+0,0.1,0,FALSE,1,0,20,17,1,19,blueBalloon.png,104,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+0,0.1,0,FALSE,1,0,20,1,1,19,blueBalloon.png,8,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+2,0.13,0.1,FALSE,1,0,20,6,1,19,blueBalloon.png,38,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
+0,0.1,0,FALSE,1,0,20,4,1,19,blueBalloon.png,26,1,m,25,004,2020-03-20_15h21.45.174,bart,3.1.3,60
