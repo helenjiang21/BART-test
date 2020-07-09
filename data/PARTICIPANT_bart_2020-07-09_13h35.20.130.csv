@@ -1,0 +1,4 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+26,0.49,1.3,FALSE,1,0,20,5,1,19,blueBalloon.png,32,,,,004,2020-07-09_13h35.20.130,bart,3.1.3,60
+57,0.94,0,TRUE,1,0,20,9,1,19,blueBalloon.png,56,,,,004,2020-07-09_13h35.20.130,bart,3.1.3,60
+15,0.31,0,TRUE,1,0,20,2,1,19,blueBalloon.png,14,,,,004,2020-07-09_13h35.20.130,bart,3.1.3,60
