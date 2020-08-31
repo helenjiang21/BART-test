@@ -1,0 +1,2 @@
+nPumps,size,earnings,popped,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,trials.order,imageFile,maxPumps,participant,gender (m/f),age,session,date,expName,psychopyVersion,frameRate
+8,0.22,0.4,FALSE,1,0,20,5,1,19,blueBalloon.png,32,jiwon,f,24,004,2020-08-31_13h16.17.576,bart,3.1.3,60
